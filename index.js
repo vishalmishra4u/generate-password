@@ -6,8 +6,8 @@ function generatePassword(level, size){
   var passLevel1 = "abcdefghijklmnopqrstuvwxyz",
   passLevel2 = "abcdefghijklmnopqrstuvwxyz0123456789",
   passLevel3 = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  passLevel4 = "abcdefghijklmnopqrstuvwxyz0123456789@#$&+-/*ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  passLevel5 = "abcdefghijklmnopqrstuvwxyz0123456789@#$&+-/*{}[]()%<>:;ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  passLevel4 = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ@#$&+-/*",
+  passLevel5 = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ@#$&+-/*{}[]()%<>:;";
 
   switch(level){
     case 1 : return generateLevel1Pass(passLevel1,size);
