@@ -5,27 +5,27 @@ module.exports = {
 function generatePassword(level, size){
   var passString = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ@#$&+-/*{}[]()%<>:;";
 
-  return generatePass(passString,size);
+  return generatePass(passString,size,level);
   }
 }
 
-function generateLevel1Pass(passLevel1,size){
+function generateLevel1Pass(passString,size,level){
   var password = "";
 
-  if(){
-
+  if(level == 1){
+    passwordString = passString.substr(0,25);
   }
-  else if(){
-
+  else if(level == 2){
+    passwordString = passString.substr(0,35);
   }
-  else if(){
-
+  else if(level == 3){
+    passwordString = passString.substr(0,61);
   }
   else{
-    
+    passwordString = passString.substr(0,80);
   }
   for(var i = 0; i < size; i++){
-    password += passLevel1.charAt(Math.floor(Math.random() * passLevel1.length));
+    password += passwordString.charAt(Math.floor(Math.random() * passLevel1.length));
   }
   return password;
 }
