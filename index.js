@@ -9,7 +9,7 @@ function generatePassword(level, size){
   }
 }
 
-function generateLevel1Pass(passString,size,level){
+function generatePassword(passString,size,level){
   var password = "";
 
   if(level == 1){
@@ -25,7 +25,7 @@ function generateLevel1Pass(passString,size,level){
     passwordString = passString.substr(0,80);
   }
   for(var i = 0; i < size; i++){
-    password += passwordString.charAt(Math.floor(Math.random() * passLevel1.length));
+    password += passwordString.charAt(Math.floor(Math.random() * passwordString.length));
   }
   return password;
 }
